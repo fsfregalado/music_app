@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import classes from './MusicList.css';
+
 import MusicItem from '../../components/MusicItem/MusicItem';
 
 
@@ -50,8 +52,10 @@ class MusicList extends Component {
 
 
         return (
-            <div>
-               <p>{musics}</p>
+            <div className={classes.MusicList}>
+                <ul>
+                   {musics}
+                </ul>
             </div>
         );
     }
